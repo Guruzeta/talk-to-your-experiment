@@ -211,3 +211,30 @@ aside { overflow-y: auto; gap: 12px; padding-right: 2px; }
 .transcript p { padding: 6px 10px; border-radius: 8px; background: var(--bg); }
 .transcript .ai { background: color-mix(in srgb, var(--accent) 8%, var(--bg)); }
 .plots img { height: 150px; }
+
+/* ---- welcome + empty states ---- */
+.hero { text-align: center; max-width: 560px; color: #1b1b1b; animation: rise 0.6s ease-out; }
+.hero-mark {
+  width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 16px;
+  display: grid; place-items: center; font: 700 28px/1 ui-sans-serif, system-ui;
+  color: #fff; background: linear-gradient(135deg, #2f5bea, #7c4dff);
+  box-shadow: 0 8px 24px rgba(47, 91, 234, 0.3);
+}
+.hero h1 { font-size: 40px; margin: 0 0 6px; font-weight: 700; color: #1f3a93; }
+.hero-sub { margin: 0 0 18px; color: #5b5a55; font-size: 15px; }
+.hero-ex { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.hero-ex span {
+  font-size: 14px; padding: 7px 14px; border-radius: 99px; color: #33322e;
+  background: #fff; border: 1px solid #e2e0d8; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+
+#status::before { content: "●"; margin-right: 5px; font-size: 9px; vertical-align: 1px; color: var(--muted); }
+#status.live::before { color: #fff; animation: pulse 1.4s infinite; }
+@keyframes pulse { 50% { opacity: 0.3; } }
+.board-title { font-weight: 600; color: var(--ink); }
+
+.activity:empty::before { content: "Tool calls (Daytona runs, file reads, sketches) appear here."; color: var(--muted); margin-left: -18px; }
+.transcript:empty::before { content: "Press Start call and just talk. Interrupt Sam any time."; color: var(--muted); }
+.plots .empty, .todos .empty { color: var(--muted); font-size: 14px; }
+.panel h2 { color: var(--ink); opacity: 0.75; }

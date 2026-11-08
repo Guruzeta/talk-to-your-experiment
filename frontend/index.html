@@ -36,13 +36,22 @@
     <main>
       <section class="board">
         <div class="board-head">
-          <span>Whiteboard</span>
+          <span class="board-title">Whiteboard</span>
           <span id="caption" class="caption"></span>
           <span id="step" class="pill subtle"></span>
         </div>
         <div id="surface" class="surface">
           <ol id="agenda" class="agenda" hidden></ol>
-          <div id="diagram" class="diagram"><p class="empty hand">Sam draws here while explaining…</p></div>
+          <div id="diagram" class="diagram"><div class="hero">
+            <div class="hero-mark">S</div>
+            <h1 class="hand">Ask Sam about your experiment</h1>
+            <p class="hero-sub">Sam reads your repo, runs the analysis in a Daytona sandbox, and sketches the answer here.</p>
+            <div class="hero-ex">
+              <span>“What does this experiment actually show?”</span>
+              <span>“Which run looks wrong, and why?”</span>
+              <span>“Walk me through it like I'm your advisor.”</span>
+            </div>
+          </div></div>
           <div id="notes" class="notes"></div>
           <div id="pen" class="pen" aria-hidden="true">✎</div>
         </div>
