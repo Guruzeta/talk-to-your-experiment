@@ -188,3 +188,26 @@ button.link {
   main { grid-template-columns: 1fr; padding: 12px 16px; }
   .diagram { min-height: 320px; }
 }
+
+/* ---- demo polish ---- */
+header { padding: 14px 24px; background: var(--surface); box-shadow: 0 1px 0 var(--line); }
+.title { font-size: 19px; letter-spacing: -0.01em; }
+.tag { font-size: 13px; color: var(--muted); }
+#start { font-weight: 600; padding: 9px 20px; box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 35%, transparent); }
+.project-bar { padding: 12px 24px 0; }
+main { grid-template-columns: minmax(0, 2.2fr) minmax(320px, 1fr); padding: 14px 24px 20px; }
+.board { box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06); }
+.board-head { font-size: 14px; }
+aside { overflow-y: auto; gap: 12px; padding-right: 2px; }
+.panel { padding: 10px 14px; }
+.prefs > summary { list-style: none; cursor: pointer; }
+.prefs > summary::-webkit-details-marker { display: none; }
+.prefs > summary h2::after { content: "▸"; margin-left: auto; }
+.prefs[open] > summary h2::after { content: "▾"; }
+.prefs > summary h2 { margin: 0; }
+.prefs[open] > summary h2 { margin-bottom: 8px; }
+.activity { max-height: 110px; }
+.panel.grow { min-height: 200px; }
+.transcript p { padding: 6px 10px; border-radius: 8px; background: var(--bg); }
+.transcript .ai { background: color-mix(in srgb, var(--accent) 8%, var(--bg)); }
+.plots img { height: 150px; }

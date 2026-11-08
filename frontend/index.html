@@ -9,7 +9,8 @@
   <body>
     <header>
       <div class="brand">
-        <strong>Talk to your experiment</strong>
+        <strong class="title">Talk to your experiment</strong>
+        <span class="tag">voice research partner · analysis runs in Daytona</span>
         <span id="status" class="pill">offline</span>
         <span id="mode" class="pill subtle"></span>
       </div>
@@ -48,8 +49,8 @@
       </section>
 
       <aside>
-        <section class="panel">
-          <h2>Explain it for me</h2>
+        <details class="panel prefs">
+          <summary><h2>Explain it for me</h2></summary>
           <div class="you-row">
             <label for="level">Level</label>
             <select id="level">
@@ -76,7 +77,7 @@
             <textarea id="sample-text" rows="4" placeholder="Paste a post, an abstract, notes… Sam matches your vocabulary and depth."></textarea>
             <button id="sample-save" class="secondary small">Save sample</button>
           </details>
-        </section>
+        </details>
         <section class="panel">
           <h2>To-do <span id="todo-count" class="count"></span><button id="todo-reset" class="link" title="Restore the original TODO.md">reset</button></h2>
           <ul id="todos" class="todos"><li class="empty">Loading…</li></ul>
