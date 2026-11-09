@@ -2,7 +2,7 @@
 
 **A voice research partner that checks your experiments by running real code, and explains what it finds on a whiteboard as it talks.**
 
-Built in one afternoon at the [SDxSDSU Voice Agent Hackathon](https://luma.com/uan97kyo) (Nov 2026, Open track).
+Built in one afternoon at the [SDxSDSU Voice Agent Hackathon](https://luma.com/uan97kyo) (Nov 2026, Open track) using claude cli. I checked outputs, verified results and debugged the code and made sure it is product ready.
 
 ## The problem
 
