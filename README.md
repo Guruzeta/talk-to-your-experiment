@@ -1,4 +1,4 @@
-# Talk to Your Experiment
+# Talk to Code
 
 A voice research partner for people drowning in LLM-generated experiment code, logs and plots.
 You ask out loud what your experiment actually shows. The agent **runs the real analysis in a Daytona sandbox**,
